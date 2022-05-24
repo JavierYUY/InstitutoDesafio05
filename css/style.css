@@ -621,6 +621,45 @@ form legend{
     grid-area: formBotones;
 }
 
+/***********************BOOTSTRAP***********************/
+/*Menu*/
+.menu-Contacto{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    background-color: #669966;
+}
+
+.menu-Contacto ul{
+    height: auto;
+}
+
+.menu-Contacto ul li{
+    list-style-type: none;/*saca los puntos del menu*/
+    display: inline-block;/*pone el menu en horizontal*/
+    font-size: 1rem;
+    margin: 0.5rem;
+    position: relative;
+}
+
+.menu-Contacto ul li a{
+    text-decoration: none;/*saca el subrayado azul del link*/
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-brand{
+    color: white;
+    font-weight: bold;
+}
+
+/*DIV EMAIL Y PAIS EN CONTACTO*/
+.select-pais-email{
+    width: 100%;
+}
+
 /**********************************MEDIA SCREEN************************************/
 @media screen and (min-width: 768px) {
     header{
@@ -733,6 +772,11 @@ form legend{
     .tienda4 img{
         width: 20rem;
     }
+
+    /*BOOTSTRAP*/
+    .menu-brand{
+        font-size: x-large;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -775,5 +819,10 @@ form legend{
     .divTienda{
         grid-template-areas:    "tituloTienda tituloTienda tituloTienda tituloTienda"
                                 "tienda1 tienda2 tienda3 tienda4";
+    }
+
+    /*BOOTSTRAP*/
+    .menu-brand{
+        font-size: xx-large;
     }
 }
